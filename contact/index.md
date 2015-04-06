@@ -12,11 +12,11 @@ layout: default
 <div class="row-fluid">
 	<div class="span4">
 		
-		<h3>Mailing address</h3>
+		<h3>Mailing Address</h3>
 		<p>In case you want to write us a mail, drop a package, or contacting us over the phone, below is our addresses. If you would like to visit us to get product information and demo, we suggest you to make an appointment few days earlier over the phone.</p>
 	
 		<form action="action" class="well notranslate">
-			<div><i class="icon-envelope"></i> <strong>STORM Lab</strong></div>
+			<div><strong>STORM Lab</strong></div>
 			<div>Mechanical Engineering Department</div>
 			<div>2400 Highland Ave</div>
 			<div>406 Olin Hall</div>
@@ -25,8 +25,8 @@ layout: default
 			<div>Phone: +1-615-322-0688</div>
 		</form>
 
-		<h3>Contact us online</h3>
-		<p>If you have any feedback, questions or thoughts to share, you can reach us at <a href="mailto:ekawahyu.susilo@vanderbilt.edu"><span class="label label-info">ekawahyu.susilo@vanderbilt.edu</span></a> Please allow us several days to respond your inquiries.</p>
+		<h3>Contact Us</h3>
+		<p>If you have any feedback, question or thought, you can reach us at <a href="mailto:ekawahyu.susilo@vanderbilt.edu"><span class="label label-info">ekawahyu.susilo@vanderbilt.edu</span></a></p>
 
 	</div>
 	
