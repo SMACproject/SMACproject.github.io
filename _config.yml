@@ -1,0 +1,10 @@
+name: "SMAC Project"
+description: "SMAC Project Website"
+
+url: "http://www.smacproject.org"
+
+paginate: 5
+
+markdown: redcarpet
+permalink: pretty
+pygments: true

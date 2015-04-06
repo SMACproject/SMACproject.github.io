@@ -1,0 +1,12 @@
+<h3>Recent Posts</h3>
+
+<ul>
+	{% for post in site.posts limit: 5 %}
+	<li><a  href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
+<p><i class="icon-tag"></i> List of tags: 
+{% for tag in site.tags %}
+<a href="/tag/{{ tag[0] }}"><span class="label label-info">{{ tag[0] }}</span></a>
+{% endfor %}
+</p>
