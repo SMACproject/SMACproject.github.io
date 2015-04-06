@@ -25,14 +25,15 @@ layout: default
 			<div>Phone: +1-615-322-0688</div>
 		</form>
 
+		<h3>Contact us online</h3>
+		<p>If you have any feedback, questions or thoughts to share, you can reach us at <a href="mailto:ekawahyu.susilo@vanderbilt.edu"><span class="label label-info">ekawahyu.susilo@vanderbilt.edu</span></a> Please allow us several days to respond your inquiries.</p>
+
 	</div>
 	
 	<div class="span8">
 
 		<h3>Google Maps</h3>
-		<p><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1610.9862430083188!2d-86.80531654232753!3d36.142883185610955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s2400+Highland+Ave%2C+Nashville%2C+TN+37212!5e0!3m2!1sen!2sus!4v1428286075691" width="600" height="450" frameborder="0" style="border:0"></iframe></p>
-		<h3>Contact us online</h3>
-		<p>If you have any feedback, questions or thoughts to share, you can reach us at <a href="mailto:ekawahyu.susilo@vanderbilt.edu"><span class="label label-info">ekawahyu.susilo@vanderbilt.edu</span></a> Please allow us several days to respond your inquiries.</p>
+		<p><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1610.9862430083188!2d-86.80531654232753!3d36.142883185610955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s2400+Highland+Ave%2C+Nashville%2C+TN+37212!5e0!3m2!1sen!2sus!4v1428286075691" width="100%" height="450" frameborder="0" style="border:0"></iframe></p>
 
 	</div>
 </div>
