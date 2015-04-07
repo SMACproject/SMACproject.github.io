@@ -1,17 +1,17 @@
 ---
-title: Home
+title: People
 layout: default
 ---
 
 <div class="row">
 	<div class="col-lg-12">
-		<h2>Home</h2>
+		<h2>People</h2>
 	</div>
 </div>
 
 <div class="row">
 	<div class="col-lg-12">
 
-		<h3>This is home</p>
+		<h3>People in this project</p>
 	</div>
 </div>

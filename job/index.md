@@ -3,22 +3,22 @@ title: Job
 layout: default
 ---
 
-<div class="row-fluid">
-	<div class="span12">
+<div class="row">
+	<div class="col-lg-12">
 		<h2>Job</h2>
 	</div>
 </div>
 
-<div class="row-fluid">
-	<div class="span12">
+<div class="row">
+	<div class="col-lg-12">
 
 		<hr>
 		
-		<h2>#1: Modular Capsule Robot STEM Educational Toolkit</h2>
-		<h3>Primary Investigator/s:</h3>
+		<h3>#1: Modular Capsule Robot STEM Educational Toolkit</h3>
+		<h4>Primary Investigator:</h4>
 		<p>Pietro Valdastri</p>
 		
-		<h3>Brief Description of Project:</h3>
+		<h4>Brief Description of Project:</h4>
 		<p>At the <a href="https://my.vanderbilt.edu/stormlab/">STORM Lab</a>, we are developing a miniature capsule robot toolkit for middle and high school classroom teaching. You can think about it as a small, modular, and super-easy-to-use version of Arduino. This research is supported by the National Science Foundation via the <a href="http://www.nsf.gov/i-corps">I-Corps Program</a>, a program to foster commercialization of NSF-funded research.</p>
 
 		<p>The project details can be found in here: <a href="http://www.cttc.co/cttc/content/vanderbilt-team-builds-miniature-capsule-robots-selected-nsf-i-corps">http://www.cttc.co/cttc/content/vanderbilt-team-builds-miniature-capsule-robots-selected-nsf-i-corps</a> 
@@ -27,13 +27,13 @@ layout: default
 
 		<p>This opportunity comes with an NSF Research Experience for Undergraduates (REU) fellowship.</p>
 
-		<h3>Desired Qualifications:</h3>
+		<h4>Desired Qualifications:</h4>
 		<p>Basic digital and electronic circuit, basic programming in C and/or Javascript, basic knowledge of developing simple app on mobile phone.</p>
 
-		<h3>Nature of Supervision:</h3>
+		<h4>Nature of Supervision:</h4>
 		<p>Over the course of the program, undergraduate students will be supervised by Dr. Susilo and by Dr. Valdastri.</p>
 
-		<h3>A Brief Research Plan (period is for 10 weeks):</h3>
+		<h4>A Brief Research Plan (period is for 10 weeks):</h4>
 
 		<ul>
 			<li>Week 1: Introduction to the robotic toolkit developed in the STORM Lab</li>
@@ -42,9 +42,9 @@ layout: default
 			<li>Weeks 9-10: Project summary, publication of data, and final oral presentation to STORM Lab members</li>
 		</ul>
 
-		<h3>Number of Slots: 2</h3>
+		<h4>Number of Slots: 2</h4>
 
-		<h3>Contact Information</h3> 
+		<h4>Contact Information</h4> 
 		<div>Ekawahyu Susilo</div>
 		<div>Postdoctoral Scholar</div>
 		<div>Mechanical Engineering</div>
@@ -52,7 +52,7 @@ layout: default
 
 		<hr>
 
-		<h2>#2: Summer Fellowship for Teachers</h2>
+		<h3>#2: Summer Fellowship for Teachers</h3>
 
 		<p>An open fellowship for teachers for the course of 8-10 weeks of summer lab research at STORM Lab, Vanderbilt University, is available with the following tasks teacher:</p>
 
