@@ -17,7 +17,7 @@ layout: default
 
 		<div class="well">
 			<address class"well notranslate">
-				<strong>STORM LAB</strong><br>
+				<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><strong> STORM LAB</strong><br>
 				Mechanical Engineering Department<br>
 				Vanderbilt University<br>
 				2400 Highland Ave<br>

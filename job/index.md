@@ -10,9 +10,7 @@ layout: default
 </div>
 
 <div class="row">
-	<div class="col-lg-12">
-
-		<hr>
+	<div class="col-lg-6">
 		
 		<h3>#1: Modular Capsule Robot STEM Educational Toolkit</h3>
 		<h4>Primary Investigator:</h4>
@@ -49,9 +47,9 @@ layout: default
 		<div>Postdoctoral Scholar</div>
 		<div>Mechanical Engineering</div>
 		<div>ekawahyu.susilo@vanderbilt.edu</div>
+	</div>
 
-		<hr>
-
+	<div class="col-lg-6">
 		<h3>#2: Summer Fellowship for Teachers</h3>
 
 		<p>An open fellowship for teachers for the course of 8-10 weeks of summer lab research at STORM Lab, Vanderbilt University, is available with the following tasks teacher:</p>
