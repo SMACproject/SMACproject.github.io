@@ -15,7 +15,7 @@ layout: default-fluid
 		  <div class="row">
 			<div class="col-lg-12">
 			<h1>SMAC Project</h1>  
-			<h3>A Modular Robotic Toolkit for Engaging Kids into Science, Technology, Engineering and Mathematic</h3>
+			<h3>A Modular Robotic Toolkit for Engaging Kids into Science, Technology, Engineering and Mathematics</h3>
 		   </div>
 		  </div>
 		</div>
