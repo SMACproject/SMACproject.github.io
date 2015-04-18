@@ -12,9 +12,8 @@ layout: default
 <div class="row">
 	<div class="col-lg-4">
 		
-		<h3>Mailing Address</h3>
-		<p>Dropping conventional mails and packages, or contacting us over the phone can be done through:</p>
-
+		<h3>Office and Lab</h3>
+		<p>Our humble place, where we blend together ideas and creativities into an interesting project like SMAC.</p>
 		<div class="well">
 			<address class"well notranslate">
 				<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><strong> STORM LAB</strong><br>
@@ -28,8 +27,7 @@ layout: default
 			</address>
 		</div>
 
-		<h3>Contact Us</h3>
-		<p>Any online inquiry about the project, please write to:</p>
+		<p>For inquiries regarding SMAC Project for Education, please email:</p>
 		<address>
 			<strong>Ekawahyu Susilo</strong><br>
 			<a href="mailto:ekawahyu.susilo@vanderbilt.edu">ekawahyu.susilo@vanderbilt.edu</a>
@@ -39,7 +37,7 @@ layout: default
 	
 	<div class="col-lg-8">
 
-		<h3>Location</h3>
+		<h3>Map</h3>
 <!--
 		<p><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1610.9862430083188!2d-86.80531654232753!3d36.142883185610955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s2400+Highland+Ave%2C+Nashville%2C+TN+37212!5e0!3m2!1sen!2sus!4v1428286075691" width="100%" height="380" frameborder="0" style="border:0"></iframe></p>
 -->
