@@ -16,7 +16,7 @@ layout: default
 		<p>Our humble place, where we blend together ideas and creativities into an interesting project like SMAC.</p>
 		<div class="well">
 			<address class"well notranslate">
-				<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><strong> STORM LAB</strong><br>
+				<span class="fa fa-envelope" aria-hidden="true"></span><strong> STORM LAB</strong><br>
 				Mechanical Engineering Department<br>
 				Vanderbilt University<br>
 				2400 Highland Ave<br>
