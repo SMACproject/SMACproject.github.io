@@ -51,27 +51,26 @@
 <!--<link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>-->
 <link href="/css/video.css" rel="stylesheet">
 <link href="/css/timeline.css" rel="stylesheet">
-<script src="/js/video.js"></script>
-<script src="/js/jquery.mb.YTPlayer.js"></script>
 
 <div class="row">
-	<section class="content-section video-section">
-	  <div class="pattern-overlay">
-	  <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=BkBEM_JK08w',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
-		<div class="container">
-		  <div class="row">
-			<div class="col-lg-12">
-			<h1>SMAC Project</h1>  
-			<h3>A Modular Robotic Toolkit for Engaging Kids into Science, Technology, Engineering and Mathematics</h3>
-		   </div>
-		  </div>
+	<div class="header-unit">
+		<section class="video-section">		
+			<div class="video-container">
+				<h1>SMAC Project</h1>
+				<h3>A Modular Robotic Toolkit for Engaging Kids into Science, Technology, Engineering and Mathematics</h3>
+			</div>
+		</section>
+		<div class="video-container">
+			<video autoplay loop class="fillWidth">
+			<source src="/media/SMAC.webm" type="video/webm"/>
+			Your browser does not support the video tag. I suggest you upgrade your browser.
+			</video>
 		</div>
-	  </div>
-	</section>
+	</div>
 </div>
 
 <div class="container">
-	<div class="row">
+<div class="row">
 	<div class="col-lg-12">
 	<ul class="timeline">
 		<li>
@@ -111,9 +110,8 @@
 		</li>
 	</ul>
 	</div>
-	</div>
 </div>
-
+</div>
 
 </div>
 <script>
