@@ -29,7 +29,7 @@ tags:
 <p>Unfortunately, same issue resulted from previous attempt.
 Our second alternative to the same problem was to execute the following command on the terminal of the Raspberry Pi Model B via Arch Linux:</p>
 
->$sudo pacman –S chromium
+>$ sudo pacman –S chromium
 
 <p>As this attempt again failed we realized that later versions of Chromium were generally not supported by most popular choices of Raspberry Pi’s operating systems.</p>
 
@@ -79,6 +79,7 @@ Our second alternative to the same problem was to execute the following command 
 >$sudo apt-get install chromium
 
 Reference:
+
 [Lnux Build Instructions](http://dev.chromium.org/developers/how-tos/get-the-code)
-[Installing Ubuntu 14.04 on a Raspberry Pi 2(Over-clocked)](
-https://www.youtube.com/watch?v=UGSQ7nzVCs4)
+
+[Installing Ubuntu 14.04 on a Raspberry Pi 2](https://www.youtube.com/watch?v=UGSQ7nzVCs4)
