@@ -5,6 +5,7 @@ layout: default
 
 <div class="row">
 	<div class="col-lg-12">
+    	<br></br>
 		<h2>Contact</h2>
 	</div>
 </div>
