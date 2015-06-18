@@ -78,7 +78,7 @@ Our second alternative to the same problem was to execute the following command 
 
 >$sudo apt-get install chromium
 
-Reference:
+<p>Reference:</p>
 
 [Lnux Build Instructions](http://dev.chromium.org/developers/how-tos/get-the-code)
 
