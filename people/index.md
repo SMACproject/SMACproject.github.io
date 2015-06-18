@@ -5,6 +5,7 @@ layout: default
 
 <div class="row">
 	<div class="col-lg-12">
+    	<br></br>
 		<h2>Meet the Team</h2>
 	</div>
 </div>
@@ -41,6 +42,6 @@ layout: default
 		{% include profiles/yasmin.html %}
 	</div>
 	<div class="col-lg-6">
-
+		{% include profiles/ashley.html %}
 	</div>
 </div>
