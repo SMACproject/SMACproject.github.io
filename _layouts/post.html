@@ -11,11 +11,15 @@ layout: default
 
         <!-- Output author details if some exist. -->
         {% if author %}
-            <span>
+            <span>           
                 <!-- Personal Info. -->
-                Written by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+                Written by 
+                <!-- Mugshot. -->
+                <img class="img-circle" width="40" src="{{ author.email | to_gravatar }}" alt="A photo of {{ author.name }}" />
+                <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
             </span>
         {% endif %}
+        
 		<p class="muted">
 			<i class="icon-calendar"></i>
 			{{ page.date | date_to_long_string }}

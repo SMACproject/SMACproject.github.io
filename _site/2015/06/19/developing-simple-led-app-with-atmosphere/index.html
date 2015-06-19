@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>SMAC Project - Chromium on Raspberry Pi</title>
+	<title>SMAC Project - Developing simple LED app with Atmosphere</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="SMAC Project Website">
 	
@@ -50,7 +50,7 @@
 	<div class="row-fluid">
 	<div class="span8">
         <br>
-		<h2>Chromium on Raspberry Pi</h2>
+		<h2>Developing simple LED app with Atmosphere</h2>
         <!-- Look the author details up from the site config. -->
         
 
@@ -67,111 +67,41 @@
         
 		<p class="muted">
 			<i class="icon-calendar"></i>
-			01 June 2015
+			19 June 2015
 		<br>
 			<i class="icon-tag"></i>
 			
 			<a href="/tag/News"><span class="label label-info">News</span></a>
 			
-			<a href="/tag/RPi"><span class="label label-info">RPi</span></a>
+			<a href="/tag/LED"><span class="label label-info">LED</span></a>
 			
-			<a href="/tag/uBuntu"><span class="label label-info">uBuntu</span></a>
-			
-			<a href="/tag/Chromium"><span class="label label-info">Chromium</span></a>
+			<a href="/tag/Atmosphere"><span class="label label-info">Atmosphere</span></a>
 			
 		</p>
 		<br>
-		<p>Our first step to provide a stable coding platform on Raspberry Pi is to install an operating system compatible with Chromium - a browser necessary to run the Google Chrome App, Espruino. Espruino is our favorite app to send commands to the SMAC robot, but it’s only supported by Chromium 23 or later versions. With a limited pool of operating systems to choose from, we started off with Raspberry Pi’s recommended OS image: Raspbian.</p>
+		<p>In order to program the The Anaren Bluetooth Smart Development kit, an account was created in https://atmosphere.anaren.com/. Creating an account gave us access to the Atmosphere Development Tool where the programming tools are located to create one’s project. In addition, the Atmosphere Programmer was downloaded to program the board once one’s project was uploaded located in the website above.</p>
 
-<p>First, we tried to install Chromium with the current source code provided by previous Raspberry Pi users:    </p>
+<p>In the Atmosphere Development Tool:</p>
 
-<blockquote>
-<p>$sudo apt-get install chromium</p>
+<ul>
+<li><p>Eight Button elements were used for four LED lights. Four of the eight were specifically to turn on and four to turn off.</p>
 
-<p>$sudo apt-get update</p>
-</blockquote>
+<p><img src="/assets/OriginalLED_Screenshot.PNG" alt="Broken image link"></p></li>
+<li><p>Using the AIR<em>UART</em>Write pre-built function, we are able to assign each button to write a specific JSON command when pressed under a function element.</p></li>
+<li><p>A background picture was created using Microsoft Clip Art. It was added to the app by adding an image element and importing the picture.</p>
 
-<p>Unfortunately, executing the above commands on the root of Raspberry Pi Model B in Raspbian proved unsuccessful. The Chromium browser installed turned out to be a version earlier than 23, which is incompatible with Espruino.</p>
+<p><img src="/assets/LED2_Screenshot.PNG" alt="Broken image link"></p></li>
+<li><p>LED labels were added using the label element.</p></li>
+<li><p>A light bulb picture was created using Microsoft Clip Art to serve as an indicator. It was added to the app by adding an image element and importing the picture. The image properties are adjusted to appear when their corresponding button is pressed. For example, if the ON button is pressed, the yellow light bulb will be visible. If the OFF button is pressed, the white light bulb will be visible.</p>
 
-<p>An alternative to this problem was to execute the following command on the root of the Raspberry Pi Model B in Pidora, third party operating system image:</p>
+<p><img src="/assets/LED3_Image_Screenshot.PNG" alt="Broken image link"></p></li>
+<li><p>We were able to program two images to function as buttons instead of having two separated function, a button and an image indicator. The images were connected to each other and their properties were set similarily to a button’s. For example, having triggers, or connectors, set to mousePressed like a button’s trigger.</p>
 
-<blockquote>
-<p>$sudo yum install chromium</p>
-</blockquote>
+<p><img src="/assets/LED5_Screenshot.PNG" alt="Broken image link"></p></li>
+<li><p>The project works exactly as the above one when using images as buttons.</p></li>
+</ul>
 
-<p>Unfortunately, same issue resulted from previous attempt.
-Our second alternative to the same problem was to execute the following command on the terminal of the Raspberry Pi Model B via Arch Linux:</p>
-
->$ sudo pacman –S chromium
-
-<p>As this attempt again failed we realized that later versions of Chromium were generally not supported by most popular choices of Raspberry Pi’s operating systems.</p>
-
-<p>Then we decided to create a virtual environment of Raspbian under an uBuntu system, and then build Chromium in this embedded system. The following codes were executed in our virtual environment:
-</p>
-
-<p>Setting Up the Environment:</p>
-
-<blockquote>
-<p>$ git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git</p>
-
-<p>$ export PATH=’pwd’/depot_tools:”$PATH”</p>
-</blockquote>
-
-<p>Creating directory:</p>
-
-<blockquote>
-<p>$ mkdir ~/chromium &amp;&amp; cd $_</p>
-</blockquote>
-
-<p>Checking out source code:</p>
-
-<blockquote>
-<p>$ fetch --nohooks [--no-history] chromium</p>
-</blockquote>
-
-<p>Getting necessary Dependencies:</p>
-
-<blockquote>
-<p>$ ./build/install-build-deps.sh</p>
-</blockquote>
-
-<p>Now building Chromium.First, generating the build files:</p>
-
-<blockquote>
-<p>$ ./build/gyp<em>chromium –Dcomponent=shared</em>library</p>
-
-<p>$ .build/gyp<em>chromium –Goutput</em>dir=out_cros</p>
-</blockquote>
-
-<p>Building Chrome:</p>
-
-<blockquote>
-<p>$ apt-get install ninja-build</p>
-
-<p>$ ninja –C out/Debug chrome</p>
-</blockquote>
-
-<p>Moving folder where Chromium was built to Raspberry Pi folder to result in obtaining access to Chromium via Raspberry Pi:</p>
-
-<blockquote>
-<p>$ sudo mv /usr/root/chromium-build.sh/ /usr/root/raspberrypi/</p>
-</blockquote>
-
-<p>To our disappointment, an unauthorized message appeared to indicate there was no permission granted to access the raspberry Pi root, therefore, code execution failed to achieve Chromium access in an embedded Raspbian system.</p>
-
-<p>Our last attempt to install Chromium with a different procedure proved unsuccessful, but the good thing is we learned the reason behind our failure: the ARM 7 architecture used by Raspbian is not compatible with Chromium.</p>
-
-<p>The newest Raspberry Pi 2 saved our day. It supports uBuntu and therefore Chromium can be installed as well. The complete procedure takes hundreds lines of code and about two hours, therefore we would like to show you a video from RickMakes “How to Installing Ubuntu 14.04 on a Raspberry Pi 2”. After successfully installed uBuntu, execute the following command should get you the latest version of Chromium without trouble!</p>
-
-<blockquote>
-<p>$sudo apt-get install chromium</p>
-</blockquote>
-
-<p>Reference:</p>
-
-<p><a href="http://dev.chromium.org/developers/how-tos/get-the-code">Lnux Build Instructions</a></p>
-
-<p><a href="https://www.youtube.com/watch?v=UGSQ7nzVCs4">Installing Ubuntu 14.04 on a Raspberry Pi 2</a></p>
+<p>To make things easier, you can <a href="/assets/LED5_LightBulb.atmo">get the result code</a> of the above steps directly.</p>
 
 		
 		<!--<div id="disqus_thread"></div>
