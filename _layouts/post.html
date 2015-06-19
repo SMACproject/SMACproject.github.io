@@ -4,7 +4,18 @@ layout: default
 
 <div class="row-fluid">
 	<div class="span8">
+        <br>
 		<h2>{{ page.title }}</h2>
+        <!-- Look the author details up from the site config. -->
+        {% assign author = site.data.authors[page.author] %}
+
+        <!-- Output author details if some exist. -->
+        {% if author %}
+            <span>
+                <!-- Personal Info. -->
+                Written by <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+            </span>
+        {% endif %}
 		<p class="muted">
 			<i class="icon-calendar"></i>
 			{{ page.date | date_to_long_string }}
@@ -14,7 +25,7 @@ layout: default
 			<a href="/tag/{{ tag }}"><span class="label label-info">{{ tag }}</span></a>
 			{% endfor %}
 		</p>
-		
+		<br>
 		{{ content }}
 		
 		<!--<div id="disqus_thread"></div>

@@ -5,7 +5,7 @@ layout: default
 
 <div class="row">
 	<div class="col-lg-12">
-		<h2><br>Job Openings</br></h2>
+		<h2><br>Job Openings</h2>
 	</div>
 </div>
 
