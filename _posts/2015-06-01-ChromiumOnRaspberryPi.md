@@ -1,16 +1,13 @@
 ---
 title: Chromium on Raspberry Pi
 layout: post
+author: yasmin
 tags:
 - News
 - RPi
 - uBuntu
 - Chromium
 ---
-
-*Written by Yasmin*
-
-*Edited by Jianing*
 
 <p>Our first step to provide a stable coding platform on Raspberry Pi is to install an operating system compatible with Chromium - a browser necessary to run the Google Chrome App, Espruino. Espruino is our favorite app to send commands to the SMAC robot, but it’s only supported by Chromium 23 or later versions. With a limited pool of operating systems to choose from, we started off with Raspberry Pi’s recommended OS image: Raspbian.</p>
 
