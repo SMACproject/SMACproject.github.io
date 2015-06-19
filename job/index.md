@@ -5,11 +5,14 @@ layout: default
 
 <div class="row">
 	<div class="col-lg-12">
-    	<br></br>
+    	<br>
 		<h2>Job Openings</h2>
+		</br>
 	</div>
 </div>
 
+<!---Original job descriptions-->
+<!---
 <div class="row">
 	<div class="col-lg-12">
 		<div class="panel panel-info">
@@ -72,4 +75,9 @@ layout: default
 		<h2>STEM Expo 2015 Flyer</h2>
 		<img class="img-responsive" src="stem_expo_flyer.jpg"></img>
 	</div>
+</div>
+-->
+
+<div>
+	<p>No job posting for now, please come again next time:)</p>
 </div>

@@ -5,8 +5,9 @@ layout: default
 
 <div class="row">
 	<div class="col-lg-12">
-    	<br></br>
+    	<br>
 		<h2>Meet the Team</h2>
+        </br>
 	</div>
 </div>
 
