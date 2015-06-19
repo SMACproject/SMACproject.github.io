@@ -5,9 +5,7 @@ layout: default
 
 <div class="row">
 	<div class="col-lg-12">
-    	<br>
-		<h2>Job Openings</h2>
-		</br>
+		<h2><br>Job Openings</br></h2>
 	</div>
 </div>
 
@@ -79,5 +77,5 @@ layout: default
 -->
 
 <div>
-	<p>No job posting for now, please come again next time:)</p>
+	<p><br>No job posting for now, please come again next time:)</br></p>
 </div>
