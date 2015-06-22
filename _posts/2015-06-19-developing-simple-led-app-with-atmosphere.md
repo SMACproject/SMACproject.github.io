@@ -1,5 +1,5 @@
 ---
-title: Developing simple LED app with Atmosphere Part 1
+title: Developing simple LED app with Atmosphere
 layout: post
 author: yasmin
 tags:

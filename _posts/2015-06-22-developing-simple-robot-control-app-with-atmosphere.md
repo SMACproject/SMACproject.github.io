@@ -1,5 +1,5 @@
 ---
-title: Developing simple LED app with Atmosphere Part 2
+title: Developing simple robot control app with Atmosphere
 layout: post
 author: ashley
 tags:
