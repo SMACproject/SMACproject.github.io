@@ -61,4 +61,4 @@ tags:
 
 <p>As you can see, my app project was quite challenging at several points in the development process.  I spent many hours working with my teammates in order to find solutions to complex issues.  But in the end, I have a great feeling of satisfaction looking at our final product.  I hope that you enjoy viewing my app as well.  After all, I didn’t design it for my own enjoyment, but rather for you to have a great educational tool.  And I hope that you can see that building an app, frustrating as it may be at times, is highly rewarding and certainly worth it.</p>
 
-<p>Click [here](/assets/Robot_Remote.atmo) to download the code to our app to check it out for yourself.</p>
+<p>"Click <a href="/assets/Robot_Remote.atmo">here</a>" to download the code to our app to check it out for yourself."</p>
