@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>SMAC Project - Developing simple LED app with Atmosphere Part 2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="SMAC Project Website">
+	
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootswatch.min.css" rel="stylesheet">
+	<link href="/css/font-awesome.min.css" rel="stylesheet">
+
+	<script src="/js/jquery-1.10.2.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/bootswatch.js"></script>
+</head>
+
+<body>
+
+<style>
+#forkongithub{display:none}@media screen and (min-width:768px){#forkongithub a{background:#b11;color:#fff;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#f11;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}#forkongithub{position:fixed;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:30px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style>
+
+<span id="forkongithub"><a href="https://github.com/smacproject" target="_blank">Fork me on GitHub</a></span>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="http://www.smacproject.org">SMAC Project</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+          	<li><a href="/blog">Blog</a></li>
+          	<li><a href="/people">People</a></li>
+          	<li><a href="/job">Job</a></li>
+			<li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+<div class="container">
+		
+	<div class="row-fluid">
+	<div class="span8">
+        <br>
+		<h2>Developing simple LED app with Atmosphere Part 2</h2>
+        <!-- Look the author details up from the site config. -->
+        
+
+        <!-- Output author details if some exist. -->
+        
+            <span>           
+                <!-- Personal Info. -->
+                Written by 
+                <!-- Mugshot. -->
+                <img class="img-circle" width="40" src="//www.gravatar.com/avatar/00ab254b35d8295c3c2b0c80e97d2939?s=135" alt="foo}" />
+                <a href="http://www.smacproject.org/people/" target="_blank">Ashley Peck</a>
+            </span>
+        
+        
+		<p class="muted">
+			<i class="icon-calendar"></i>
+			22 June 2015
+		<br>
+			<i class="icon-tag"></i>
+			
+			<a href="/tag/News"><span class="label label-info">News</span></a>
+			
+			<a href="/tag/LED"><span class="label label-info">LED</span></a>
+			
+			<a href="/tag/Atmosphere"><span class="label label-info">Atmosphere</span></a>
+			
+		</p>
+		<br>
+		<p>Developing an app can be a challenging project, but with the right set of tools and a good dose of enthusiasm, it can be rewarding as well! In this entry, I will walk you step-by-step through the design of my first app: a robot remote control.</p>
+
+<h4>Getting Started</h4>
+
+<p>Starting any new task is always the hardest part.  Just like driving, when you set out to develop an app it is essential to have a good roadmap of where you want to go.  As you twist and turn along the way, your roadmap will serve as a guide to keep you on course.</p>
+
+<p>The goal of our project was to create a user-friendly app to play a 2-on-2 robot soccer game.  And oh yeah, did I mention that the robots were to be remote controlled by the user’s smartphone via Bluetooth?  The app has a set of light-up arrow keys that the users can press to wirelessly direct the robots in the field of play.</p>
+
+<p>To make all of this possible, the app uses an up-and-coming development environment called Anaren Atmosphere’s Developer.  What this means is that the Anaren Developer contains the blueprint with instructions that allows the user’s smartphone to communicate with the robot over the Bluetooth network.</p>
+
+<h4>Look for Examples</h4>
+
+<p>Once you have a vision for your app, it is a good idea to surf the web to check out if there are already any existing projects similar to yours.  If so, you may be able to use them as a springboard for your own project (giving proper credit to the sources, of course).  I mean, why reinvent the wheel when Google is only a few touches of the keyboard away?</p>
+
+<p><img src="/assets/look_for_examples.PNG" alt="Broken image link"></p>
+
+<p>The Anaren Developer actually already has many sample projects to explore.  In fact, my initial app design was heavily based on the Robot sample that can be found under the help menu of the developer.</p>
+
+<p>This sample provides a great introduction to the software and even looks a bit like the app that I had envisioned designing.  It has buttons that cause a robot to move in ways similar to what I needed as I set forth to design my app.  This turned out to be a great starting point and was inspiration for the rest of my work.</p>
+
+<h4>Make it Work</h4>
+
+<p>After reviewing some potentially useful sources, the next step is to decide what you can use from the existing apps but also (and perhaps most importantly) what you need to change to fit your specific task.</p>
+
+<p>In my case, the sample app’s general layout could be incorporated into my work.  However, the way the sample app communicated with the robot was not exactly what I needed.</p>
+
+<p><img src="/assets/make_it_work.PNG" alt="Broken image link"></p>
+
+<p>The SMAC robot needs specific commands to know where to go.  It requires the commands to be in a particular form in order for it to understand. For example, if {“motor1”: “off”} is sent to the robot, it will know to turn motor 1 off.  These commands were set so that they are automatically sent to the robot when the arrow buttons are pressed.</p>
+
+<h4>Make it Visually Appealing</h4>
+
+<p>Once you finally get the app working properly (programmers use the term “debugging” to talk about the process of checking for errors), the next step is to make your app look beautiful.  By this point, you have poured your heart and soul into making this app, so why not add some visual appeal so that everyone else sees how beautiful it really is?</p>
+
+<p>The Anaren Developer automatically starts out with a white background and light grey buttons.  While an app may work perfectly, it is always more appealing if it has some color and a pinch of pizazz.</p>
+
+<p><img src="/assets/make_it_visually_appealing.PNG" alt="Broken image link"></p>
+
+<p>In the Anaren Developer, one of the easiest ways to accomplish this is with the use of images.  In my next design, I added a background and a title block.  I also added images of arrows that went underneath the corresponding buttons.  But I wasn’t finished quite yet.</p>
+
+<h4>Keep Revising</h4>
+
+<p>After creating this initial design, I came across another example app from Anaren that showed how to create a more sophisticated user interface (https://atmosphere.anaren.com/wiki/UI_Demo_Example).  This discovery allowed me to make several more improvements.</p>
+
+<p><img src="/assets/keep_revising.PNG" alt="Broken image link"></p>
+
+<p>The arrows evolved from simple pictures in the background to real buttons with functionality of their own!  Rather than having to press the exact rectangular button, as before, the user could now press anywhere in the arrow to send the robot instructions to start zooming off in that direction.  To top off the new design, I added an actual photo of the robot in the bottom corner of the app.  Pretty nifty, eh?</p>
+
+<p>Besides having better graphics, the revamped app design also contains some sweet interactive features as well.  I added a hyperlink to our website in the bottom of the app.  I even got the arrows to change from purple to yellow when the user presses them.  Cooler still is that every time one of the arrows is pressed, the wheel on the robot picture rotates.</p>
+
+<p>The wheel rotating was by far the trickiest part of the design process.  There were several angles of the problem that needed to be considered.  I wanted the wheel to start rotating whenever a button was pressed. The image of the wheel needed to do a single, full rotation and then stop.  The rotation had to happen at just the right speed (in case you are curious, this was accomplished by rotating the image 40 degrees every 40ms).</p>
+
+<p>As you can see, my app project was quite challenging at several points in the development process.  I spent many hours working with my teammates in order to find solutions to complex issues.  But in the end, I have a great feeling of satisfaction looking at our final product.  I hope that you enjoy viewing my app as well.  After all, I didn’t design it for my own enjoyment, but rather for you to have a great educational tool.  And I hope that you can see that building an app, frustrating as it may be at times, is highly rewarding and certainly worth it.</p>
+
+<p>Click [here](/assets/Robot_Remote.atmo) to download the code to our app to check it out for yourself.</p>
+
+		
+		<!--<div id="disqus_thread"></div>
+			<script type="text/javascript">
+			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+			var disqus_shortname = 'smac'; // required: replace example with your forum shortname
+			
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		-->
+	</div>
+	<div class="span4">
+
+		<h3>Recent Posts</h3>
+
+<ul>
+	
+	<li><a  href="/2015/06/22/developing-simple-led-app-with-atmosphere-part2/">Developing simple LED app with Atmosphere Part 2</a></li>
+	
+	<li><a  href="/2015/06/19/developing-simple-led-app-with-atmosphere-part1/">Developing simple LED app with Atmosphere Part 1</a></li>
+	
+	<li><a  href="/2015/06/01/ChromiumOnRaspberryPi/">Chromium on Raspberry Pi</a></li>
+	
+</ul>
+<p><i class="icon-tag"></i> List of tags: 
+
+<a href="/tag/News"><span class="label label-info">News</span></a>
+
+<a href="/tag/RPi"><span class="label label-info">RPi</span></a>
+
+<a href="/tag/uBuntu"><span class="label label-info">uBuntu</span></a>
+
+<a href="/tag/Chromium"><span class="label label-info">Chromium</span></a>
+
+<a href="/tag/LED"><span class="label label-info">LED</span></a>
+
+<a href="/tag/Atmosphere"><span class="label label-info">Atmosphere</span></a>
+
+</p>
+
+
+	</div>
+</div>
+
+
+</div>
+<script>
+
+</script>
+
+
+	<!---<div class="container">
+		
+		<hr>
+		
+		<p>Text here</p>
+		
+	</div>-->
+	
+	<div class="container">
+		
+		<hr>
+	
+		<p>Copyright &copy; 2015 <a href="http://my.vanderbilt.edu/stormlab/">STORM Lab</a> - <a href="http://www.vanderbilt.edu">Vanderbilt University</a> - All Rights Reserved</p>
+	</div>
+	
+</body>
+</html>
+
